@@ -1,153 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padma Bellamkonda</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        /* Basic Reset */
+        * {
             margin: 0;
-            background-color: #f8f8f8;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
             color: #333;
             display: flex;
-            height: 100vh;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            display: flex;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
             overflow: hidden;
         }
-        /* Sidebar styles */
+        /* Left Sidebar */
         .sidebar {
-            width: 240px;
-            background-color: #ffffff;
-            border-right: 1px solid #ddd;
+            width: 30%;
+            background-color: #f0f2f5;
             padding: 20px;
-            box-sizing: border-box;
-            position: fixed;
-            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #ddd;
         }
-        .sidebar h2 {
-            font-weight: 600;
-            font-size: 20px;
-            margin: 0 0 30px;
+        .sidebar img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            margin-bottom: 15px;
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
         .sidebar ul {
             list-style-type: none;
-            padding: 0;
+            width: 100%;
         }
         .sidebar ul li {
-            margin: 15px 0;
+            padding: 8px 0;
+            font-size: 0.9em;
         }
-        .sidebar ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 16px;
-        }
-        /* Main content styles */
+        /* Main Content */
         .main-content {
-            margin-left: 260px;
-            padding: 40px;
-            overflow-y: auto;
-            width: calc(100% - 260px);
-        }
-        .section {
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        .section h2 {
-            font-weight: 600;
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .section p, .section ul {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-        /* Notion-style buttons and cards */
-        .button {
-            display: inline-block;
-            padding: 8px 16px;
-            background-color: #5c6bc0;
-            color: white;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-        .portfolio-item {
+            width: 70%;
             padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+        }
+        .main-content h1 {
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: center;
+        }
+        .main-content h2 {
+            font-size: 1em;
+            text-align: center;
+            color: #666;
             margin-bottom: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            font-size: 0.9em;
+            color: #555;
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .contact-info div i {
+            margin-right: 5px;
+            color: #4a6655;
+        }
+        .profile-section, .work-experience {
+            margin-bottom: 20px;
+        }
+        .profile-section p, .work-experience p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #444;
+        }
+        /* Work Experience */
+        .work-experience h3 {
+            font-size: 1em;
+            margin-top: 10px;
+            font-weight: 600;
+            color: #4a6655;
+        }
+        .work-experience .job-details {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+        .add-experience {
+            color: #4a6655;
+            font-size: 0.9em;
+            cursor: pointer;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <h2>Padma Bellamkonda</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>My name is Padma Bellamkonda, and I am a second-year undergraduate student currently studying Computer Science at UCR. I am passionate about Data Analytics and am excited to learn more about this field, make new connections, and explore new opportunities.</p>
-            <h3>Skills:</h3>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <img src="https://via.placeholder.com/120" alt="Profile Picture">
+            <h3>Padma Bellamkonda</h3>
+            <div class="section-title">Skills</div>
             <ul>
-                <li>C++, JavaScript, Java, R Programming, Python</li>
+                <li>HTML + CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Python</li>
+                <li>SQL</li>
             </ul>
-            <h3>Relevant Coursework:</h3>
+            <div class="section-title">Languages</div>
             <ul>
-                <li>Machine Organization and Assembly Language, Algorithms and Data Structures, Logic Design, Software Construction, Linear Algebra, Discrete Structures, Statistics, Embedded Systems, Physics</li>
+                <li>English</li>
+                <li>Spanish</li>
             </ul>
-        </section>
+        </div>
 
-        <section id="portfolio" class="section">
-            <h2>Portfolio</h2>
-            <div class="portfolio-item">
-                <h3>QuizUs</h3>
-                <p>UI/UX Development, iOS, Swift</p>
-                <a href="#" class="button">View More</a>
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>Padma Bellamkonda</h1>
+            <h2>Web — Developer</h2>
+            <div class="contact-info">
+                <div><i class="fas fa-globe"></i> yourwebsite.com</div>
+                <div><i class="fas fa-envelope"></i> youremail@gmail.com</div>
+                <div><i class="fas fa-map-marker-alt"></i> Location, Country</div>
+                <div><i class="fas fa-phone"></i> +1 234 567 890</div>
+                <div><i class="fab fa-github"></i> GitHub Link</div>
             </div>
-            <div class="portfolio-item">
-                <h3>Tic Tac Toe</h3>
-                <p>Swift, iOS Development</p>
-                <a href="#" class="button">View More</a>
-            </div>
-            <div class="portfolio-item">
-                <h3>Study Jam Cafe</h3>
-                <p>iOS Development, Game Development, Game Design, Figma</p>
-                <a href="#" class="button">View More</a>
-            </div>
-        </section>
 
-        <section id="contact" class="section">
-            <h2>Contact Me</h2>
-            <p>Please fill out the form below!</p>
-            <form name="sentMessage" id="contactForm">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Johnny Appleseed">
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="jappleseed@gmail.com">
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="I would like to meet with you"></textarea>
-                </div>
-                <button type="submit" class="button">Send Message</button>
-            </form>
-        </section>
+            <div class="profile-section">
+                <div class="section-title">Profile</div>
+                <p>Motivated and results-driven Software Engineer with 2+ years of experience in my field. I have continuously demonstrated experience in improving software performance by implementing new ideas, updating, testing, and coding. In my free time, I enjoy exploring new technologies, contributing to open-source projects, and hiking.</p>
+            </div>
+
+            <div class="work-experience">
+                <div class="section-title">Work Experience</div>
+                <div class="add-experience">Add a new Work Experience</div>
+                <h3>2021 - 2023: Frontend Developer - Tech Innovators Inc.</h3>
+                <p class="job-details">As a Frontend Developer at Tech Innovators Inc., I contributed to the development and maintenance of responsive web applications using React. My responsibilities included collaborating with designers and backend developers to create seamless user experiences.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>

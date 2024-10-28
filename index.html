@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padma Bellamkonda</title>
+    <title>Padma Bellamkonda - Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Basic Reset */
@@ -16,158 +16,166 @@
             font-family: Arial, sans-serif;
             background-color: #f8f9fa;
             color: #333;
-            display: flex;
-            justify-content: center;
+            line-height: 1.6;
             padding: 20px;
         }
         .container {
             max-width: 900px;
-            display: flex;
+            margin: 0 auto;
             background-color: #fff;
+            padding: 40px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            overflow: hidden;
         }
-        /* Left Sidebar */
-        .sidebar {
-            width: 30%;
-            background-color: #f0f2f5;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border-right: 1px solid #ddd;
-        }
-        .sidebar img {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            margin-bottom: 15px;
-        }
-        .sidebar h3 {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-        }
-        .section-title {
-            font-size: 1.1em;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            width: 100%;
-        }
-        .sidebar ul li {
-            padding: 8px 0;
-            font-size: 0.9em;
-        }
-        /* Main Content */
-        .main-content {
-            width: 70%;
-            padding: 20px;
-        }
-        .main-content h1 {
-            font-size: 1.8em;
-            font-weight: 600;
+        .header {
             text-align: center;
-        }
-        .main-content h2 {
-            font-size: 1em;
-            text-align: center;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
             margin-bottom: 30px;
         }
-        .contact-info div {
-            display: flex;
-            align-items: center;
+        .header h1 {
+            font-size: 2em;
+            font-weight: 600;
+        }
+        .header p {
+            color: #666;
             font-size: 0.9em;
-            color: #555;
-            border: 1px solid #ddd;
-            padding: 5px 10px;
-            border-radius: 5px;
         }
-        .contact-info div i {
-            margin-right: 5px;
+        .section-title {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
             color: #4a6655;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
         }
-        .profile-section, .work-experience {
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .contact-info div {
+            margin-bottom: 5px;
+        }
+        .content-section {
+            margin-bottom: 30px;
+        }
+        .content-section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .content-section ul li {
+            margin-bottom: 10px;
+        }
+        .experience, .project {
             margin-bottom: 20px;
         }
-        .profile-section p, .work-experience p {
-            font-size: 0.9em;
-            line-height: 1.6;
-            color: #444;
-        }
-        /* Work Experience */
-        .work-experience h3 {
-            font-size: 1em;
-            margin-top: 10px;
-            font-weight: 600;
+        .job-title, .project-title {
+            font-weight: bold;
             color: #4a6655;
         }
-        .work-experience .job-details {
+        .job-duration, .project-duration {
             font-size: 0.9em;
-            color: #555;
-            margin-top: 5px;
-        }
-        .add-experience {
-            color: #4a6655;
-            font-size: 0.9em;
-            cursor: pointer;
-            margin-top: 10px;
+            color: #666;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <img src="https://via.placeholder.com/120" alt="Profile Picture">
-            <h3>Padma Bellamkonda</h3>
-            <div class="section-title">Skills</div>
+        <!-- Header -->
+        <div class="header">
+            <h1>Padma Bellamkonda</h1>
+            <p>Riverside, California | (408) 833-5286 | pad9012@gmail.com | LinkedIn</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="content-section">
+            <div class="section-title">Education</div>
+            <p><strong>UC Riverside</strong> - Riverside, CA</p>
+            <p>Candidate for Bachelors of Science in Computer Science (Expected Graduation: June 2025)</p>
             <ul>
-                <li>HTML + CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Python</li>
-                <li>SQL</li>
-            </ul>
-            <div class="section-title">Languages</div>
-            <ul>
-                <li>English</li>
-                <li>Spanish</li>
+                <li>Honors: Chancellor and Regents Scholar, Howard H. Hayes Scholarship, RoseHack Winner</li>
+                <li>Organizations: Women in Computing, ACM, Google: ExploreCSR, SHPE</li>
             </ul>
         </div>
 
-        <!-- Main Content -->
-        <div class="main-content">
-            <h1>Padma Bellamkonda</h1>
-            <h2>Web — Developer</h2>
-            <div class="contact-info">
-                <div><i class="fas fa-globe"></i> yourwebsite.com</div>
-                <div><i class="fas fa-envelope"></i> youremail@gmail.com</div>
-                <div><i class="fas fa-map-marker-alt"></i> Location, Country</div>
-                <div><i class="fas fa-phone"></i> +1 234 567 890</div>
-                <div><i class="fab fa-github"></i> GitHub Link</div>
+        <!-- Skills Section -->
+        <div class="content-section">
+            <div class="section-title">Skills</div>
+            <p>C++, iOS Development, HTML/CSS, Java, Python, Flutter, Swift, Machine Learning, Git, PowerBI, Game Dev, Web Dev, SQL, Kotlin, AI/ML, Tableau, FPGAs, Xilinx, AWS, Google Cloud</p>
+        </div>
+
+        <!-- Professional Experience Section -->
+        <div class="content-section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="experience">
+                <p class="job-title">SW Engineering and Cloud Services @ Medtronic</p>
+                <p class="job-duration">San Diego, CA | Intern | June 2024 - Sep 2024</p>
+                <ul>
+                    <li>Developed an Android widget for Medtronic's InPen, improving data accessibility for over 10,000 users.</li>
+                    <li>Optimized the Jetpack Glance API and Google Cloud to ensure seamless communication between the app and the InPen device.</li>
+                    <li>Conducted extensive research and documentation to support the FDA release process, ensuring compliance with regulatory standards.</li>
+                </ul>
             </div>
 
-            <div class="profile-section">
-                <div class="section-title">Profile</div>
-                <p>Motivated and results-driven Software Engineer with 2+ years of experience in my field. I have continuously demonstrated experience in improving software performance by implementing new ideas, updating, testing, and coding. In my free time, I enjoy exploring new technologies, contributing to open-source projects, and hiking.</p>
+            <div class="experience">
+                <p class="job-title">SW Engineering @ DexCom Inc</p>
+                <p class="job-duration">San Diego, CA | Intern | June 2023 - Nov 2023</p>
+                <ul>
+                    <li>Collaborated with a cross-functional team to develop and integrate Google Assistant functionality into Dexcom's G7 application.</li>
+                    <li>Led the design and implementation of the application's voice interface, ensuring compatibility across Google Assistant-enabled devices.</li>
+                </ul>
             </div>
 
-            <div class="work-experience">
-                <div class="section-title">Work Experience</div>
-                <div class="add-experience">Add a new Work Experience</div>
-                <h3>2021 - 2023: Frontend Developer - Tech Innovators Inc.</h3>
-                <p class="job-details">As a Frontend Developer at Tech Innovators Inc., I contributed to the development and maintenance of responsive web applications using React. My responsibilities included collaborating with designers and backend developers to create seamless user experiences.</p>
+            <div class="experience">
+                <p class="job-title">Google Computer Science Research Mentorship Program (CSRMP)</p>
+                <p class="job-duration">Riverside, CA | Research Fellow | Jan 2022 - Feb 2023</p>
+                <ul>
+                    <li>Reported research progress to mentor and peers with shared interests in Data Analytics.</li>
+                    <li>Brainstormed and worked with Research and Industry Professionals on Data Analytics projects.</li>
+                </ul>
             </div>
+            
+            <div class="experience">
+                <p class="job-title">Tissue Spatial Geometrics Laboratory</p>
+                <p class="job-duration">San Jose, CA | Senior Intern | Jan 2018 - Sep 2021</p>
+                <ul>
+                    <li>Analyzed disorder in melanoma cells using the Quadrant Slope Index Method and published a poster.</li>
+                    <li>Created educational videos on performing statistical analysis and working with data in R.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project Experience Section -->
+        <div class="content-section">
+            <div class="section-title">Project Experience</div>
+            
+            <div class="project">
+                <p class="project-title">Cafe Modero | RoseHack: UCR’s Pioneer Women-centric Hackathon</p>
+                <p class="project-duration">Riverside, CA | Hackathon Winner | Jan 2023</p>
+                <ul>
+                    <li>Developed a study hub website for students using HTML/CSS and JavaScript within 24 hours.</li>
+                    <li>Integrated Spotify API for users to log in and play music while studying, with additional features like Pomodoro Timer and To-Do List.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <p class="project-title">The Candy Factory | Group Project</p>
+                <p class="project-duration">Riverside, CA | Jan 2023 - Mar 2023</p>
+                <ul>
+                    <li>Implemented object-oriented programming to create a dynamic narrative with multiple endings.</li>
+                    <li>Utilized agile methodology to ensure regular sprints and prioritize features like unit testing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Leadership Experience Section -->
+        <div class="content-section">
+            <div class="section-title">Leadership Experience</div>
+            <p><strong>Women In Computing (WINC) - Riverside, CA | President</strong></p>
+            <ul>
+                <li>Spearheaded initiatives to promote diversity and inclusion in the computing field.</li>
+                <li>Managed a thriving community of over 500 members, fostering a supportive environment for networking and skill development.</li>
+            </ul>
         </div>
     </div>
 </body>

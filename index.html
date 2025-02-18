@@ -4,37 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padma Bellamkonda</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body, html {
-            margin: 0;
             padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: 'Roboto', sans-serif;
-            background: #f4f5f7;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #005f73;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 960px;
             margin: auto;
-            background: #fff;
             padding: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
         h1, h2 {
-            color: #333;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
+            font-weight: 600;
         }
 
         p, li {
-            color: #666;
+            font-weight: 300;
         }
 
         a {
-            color: #2957ba;
+            color: #0a9396;
             text-decoration: none;
         }
 
@@ -42,80 +56,87 @@
             text-decoration: underline;
         }
 
-        .header {
-            text-align: center;
-            padding: 20px;
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #94d2bd;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
         }
 
-        .section {
-            margin-bottom: 20px;
+        .button:hover {
+            background-color: #005f73;
+        }
+
+        .skills, .experience, .projects, .leadership {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005f73;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Padma Bellamkonda</h1>
-            <p>Riverside, California | <a href="tel:+14088335286">(408) 833-5286</a> | <a href="mailto:pad9012@gmail.com">pad9012@gmail.com</a> | <a href="https://www.linkedin.com/in/padma-bellamkonda/">LinkedIn</a></p>
-        </div>
+    <header>
+        <h1>Padma Bellamkonda</h1>
+        <p>Innovating the Future</p>
+    </header>
 
+    <div class="container">
         <div class="section">
-            <h2>Education</h2>
-            <p>UC Riverside - Riverside, CA</p>
-            <p>Candidate for Bachelor of Science in Computer Science (Expected Graduation: June 2025)</p>
-            <ul>
-                <li>Honors: Chancellor and Regents Scholar, Howard H. Hayes Scholarship, RoseHack Winner</li>
-                <li>Organizations: Women in Computing, ACM, Google: ExploreCSR, SHPE</li>
-            </ul>
+            <h2>About Me</h2>
+            <p>Hi, I'm Padma! I'm a dedicated computer science student at UC Riverside, passionate about leveraging technology to solve real-world problems.</p>
+            <a href="#contact" class="button">Contact Me</a>
         </div>
 
         <div class="section">
             <h2>Skills</h2>
-            <p>Programming Languages & Frameworks: Python, Java, C++, Swift, Kotlin, Flutter, HTML/CSS, JavaScript</p>
-            <p>Tools & Platforms: Git, AWS, Google Cloud, PowerBI, Tableau, Xilinx</p>
-            <p>Specialized Skills: Machine Learning, AI, Data Analysis with Pandas, FPGA Programming</p>
+            <ul class="skills">
+                <li>Programming Languages: Python, Java, C++</li>
+                <li>Frameworks: Swift, Kotlin, Flutter</li>
+                <li>Tools: AWS, Google Cloud, Xilinx</li>
+                <li>Data Analysis with Pandas</li>
+            </ul>
         </div>
 
         <div class="section">
             <h2>Professional Experience</h2>
-            <p><strong>SW Engineering and Cloud Services @ Medtronic, San Diego, CA</strong> (Summer 2024 Intern, June - September 2024)</p>
-            <ul>
-                <li>Enhanced data retrieval times by 20%, improving user satisfaction and engagement across 10,000+ users</li>
-                <li>Optimized the Jetpack Glance API and Google Cloud to ensure seamless communication between the app and the InPen device</li>
-                <li>Conducted extensive research and documentation to support the FDA release process, ensuring compliance with regulatory standards</li>
-            </ul>
-            <p><strong>SW Engineering @ DexCom Inc, San Diego, CA</strong> (Summer 2023 Intern, June - November 2023)</p>
-            <ul>
-                <li>Integrated Google Assistant into Dexcom’s G7 app, increasing user engagement by 15% and reducing navigation errors by 25%</li>
-                <li>Led the design and implementation of the application's voice interface, ensuring compatibility across Google Assistant-enabled devices</li>
+            <ul class="experience">
+                <li>Medtronic, SW Engineering Intern - Improved data retrieval times by 20% during my summer internship.</li>
+                <li>DexCom Inc, SW Engineering Intern - Integrated Google Assistant into medical devices, boosting user engagement significantly.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Project Experience</h2>
-            <p><strong>Bias Mitigation in Credit Lending Decision System</strong>, University Course Project - Data Science Ethics (Dec 2024 - Feb 2025)</p>
-            <ul>
-                <li>Spearheaded a team project to detect and mitigate biases within the South German Credit dataset using Python</li>
-                <li>Utilized Pandas for data manipulation and Numpy for numerical data processing, achieving a 30% improvement in preprocessing efficiency</li>
-            </ul>
-            <p><strong>KawrgoJumper</strong>, University Course Project - Data Science Ethics (Sep - Dec 2024)</p>
-            <ul>
-                <li>Developed a robust backend system using Express.js and managed shipping manifests for a port management application</li>
-            </ul>
-            <p><strong>Cafe Modero</strong>, RoseHack: UCR’s Pioneer Women-centric Hackathon Winner (Jan 14 - Jan 15, 2023)</p>
-            <ul>
-                <li>Developed a study hub website integrating the Spotify API, a Pomodoro Timer, and a To-Do List feature</li>
+            <h2>Projects</h2>
+            <ul class="projects">
+                <li>Cafe Modero: Designed a website for productivity with integrated Spotify functionality during RoseHack.</li>
             </ul>
         </div>
 
         <div class="section">
-            <h2>Leadership Experience</h2>
-            <p><strong>Women In Computing (WINC), Riverside, CA</strong></p>
-            <ul>
-                <li>Grew membership by 40% through targeted outreach and implemented a mentorship program that increased active engagement</li>
-                <li>Organized and hosted over 40 annual tech workshops and speaker events</li>
+            <h2>Leadership</h2>
+            <ul class="leadership">
+                <li>Women In Computing (WINC): Grew membership by 40% and implemented successful mentorship programs.</li>
             </ul>
         </div>
     </div>
+
+    <footer>
+        <p>© 2025 Padma Bellamkonda. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>

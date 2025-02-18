@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Padma's Page</title>
+    <title>Padma Bellamkonda</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body, html {
@@ -12,82 +12,110 @@
             width: 100%;
             height: 100%;
             font-family: 'Roboto', sans-serif;
+            background: #f4f5f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
             background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        p, li {
+            color: #666;
+        }
+
+        a {
+            color: #2957ba;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         .header {
-            background: url('your-image-url.jpg') no-repeat center center;
-            background-size: cover;
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-
-        .profile {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid white;
-            background: url('your-profile-picture.jpg') no-repeat center center;
-            background-size: cover;
-            position: relative;
-            top: 50px;
-        }
-
-        .content {
             text-align: center;
-            padding-top: 60px;
+            padding: 20px;
         }
 
-        .navigation {
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-
-        .navigation a {
-            color: #333;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: 700;
-        }
-
-        .navigation a:hover {
-            color: #555;
-        }
-
-        .introduction {
-            margin: 20px auto;
-            max-width: 800px;
-            line-height: 1.6;
-        }
-
-        .footer {
-            text-align: center;
-            font-size: 14px;
-            color: #666;
-            margin-top: 40px;
+        .section {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="profile"></div>
-    </div>
-    <div class="content">
-        <h1>Padma's Page</h1>
-        <div class="navigation">
-            <a href="#projects">Projects</a>
-            <a href="#writing">Writing</a>
-            <a href="#about">About</a>
+    <div class="container">
+        <div class="header">
+            <h1>Padma Bellamkonda</h1>
+            <p>Riverside, California | <a href="tel:+14088335286">(408) 833-5286</a> | <a href="mailto:pad9012@gmail.com">pad9012@gmail.com</a> | <a href="https://www.linkedin.com/in/padma-bellamkonda/">LinkedIn</a></p>
         </div>
-        <div class="introduction">
-            <p>Hello and welcome to my internet home! I'm Padma, a software engineer and tech enthusiast.</p>
+
+        <div class="section">
+            <h2>Education</h2>
+            <p>UC Riverside - Riverside, CA</p>
+            <p>Candidate for Bachelor of Science in Computer Science (Expected Graduation: June 2025)</p>
+            <ul>
+                <li>Honors: Chancellor and Regents Scholar, Howard H. Hayes Scholarship, RoseHack Winner</li>
+                <li>Organizations: Women in Computing, ACM, Google: ExploreCSR, SHPE</li>
+            </ul>
         </div>
-    </div>
-    <div class="footer">
-        <p>Connect with me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <p>Programming Languages & Frameworks: Python, Java, C++, Swift, Kotlin, Flutter, HTML/CSS, JavaScript</p>
+            <p>Tools & Platforms: Git, AWS, Google Cloud, PowerBI, Tableau, Xilinx</p>
+            <p>Specialized Skills: Machine Learning, AI, Data Analysis with Pandas, FPGA Programming</p>
+        </div>
+
+        <div class="section">
+            <h2>Professional Experience</h2>
+            <p><strong>SW Engineering and Cloud Services @ Medtronic, San Diego, CA</strong> (Summer 2024 Intern, June - September 2024)</p>
+            <ul>
+                <li>Enhanced data retrieval times by 20%, improving user satisfaction and engagement across 10,000+ users</li>
+                <li>Optimized the Jetpack Glance API and Google Cloud to ensure seamless communication between the app and the InPen device</li>
+                <li>Conducted extensive research and documentation to support the FDA release process, ensuring compliance with regulatory standards</li>
+            </ul>
+            <p><strong>SW Engineering @ DexCom Inc, San Diego, CA</strong> (Summer 2023 Intern, June - November 2023)</p>
+            <ul>
+                <li>Integrated Google Assistant into Dexcom’s G7 app, increasing user engagement by 15% and reducing navigation errors by 25%</li>
+                <li>Led the design and implementation of the application's voice interface, ensuring compatibility across Google Assistant-enabled devices</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Project Experience</h2>
+            <p><strong>Bias Mitigation in Credit Lending Decision System</strong>, University Course Project - Data Science Ethics (Dec 2024 - Feb 2025)</p>
+            <ul>
+                <li>Spearheaded a team project to detect and mitigate biases within the South German Credit dataset using Python</li>
+                <li>Utilized Pandas for data manipulation and Numpy for numerical data processing, achieving a 30% improvement in preprocessing efficiency</li>
+            </ul>
+            <p><strong>KawrgoJumper</strong>, University Course Project - Data Science Ethics (Sep - Dec 2024)</p>
+            <ul>
+                <li>Developed a robust backend system using Express.js and managed shipping manifests for a port management application</li>
+            </ul>
+            <p><strong>Cafe Modero</strong>, RoseHack: UCR’s Pioneer Women-centric Hackathon Winner (Jan 14 - Jan 15, 2023)</p>
+            <ul>
+                <li>Developed a study hub website integrating the Spotify API, a Pomodoro Timer, and a To-Do List feature</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Leadership Experience</h2>
+            <p><strong>Women In Computing (WINC), Riverside, CA</strong></p>
+            <ul>
+                <li>Grew membership by 40% through targeted outreach and implemented a mentorship program that increased active engagement</li>
+                <li>Organized and hosted over 40 annual tech workshops and speaker events</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>

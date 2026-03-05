@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Padma Bellamkonda</title>
 
 <style>
+
 body{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 800px;
+    max-width: 820px;
     margin: auto;
     padding: 40px 20px;
     line-height: 1.6;
+    background:#fafafa;
     color:#222;
 }
 
 h1{
-    font-size: 34px;
+    font-size:36px;
+    margin-bottom:5px;
 }
 
 h2{
     margin-top:40px;
+    border-bottom:1px solid #e8e8e8;
+    padding-bottom:6px;
 }
 
 a{
-    color:#0066cc;
+    color:#6fbf73;
     text-decoration:none;
 }
 
@@ -33,47 +40,100 @@ a:hover{
     text-decoration:underline;
 }
 
-.project{
+.hero{
     margin-bottom:30px;
 }
 
-.stack{
+.tagline{
     color:#666;
+    font-size:18px;
+}
+
+.section{
+    margin-top:35px;
+}
+
+.project{
+    margin-bottom:28px;
+}
+
+.stack{
+    color:#777;
     font-size:14px;
 }
+
+.badge{
+    display:inline-block;
+    background:#eaf6ec;
+    color:#4f7f56;
+    padding:4px 8px;
+    border-radius:6px;
+    font-size:12px;
+    margin-right:6px;
+}
+
+.footer{
+    margin-top:60px;
+    font-size:13px;
+    color:#888;
+}
+
 </style>
 
 </head>
 
 <body>
 
+<div class="hero">
+
 <h1>Padma Bellamkonda</h1>
 
-<p>
-Software engineer who enjoys building practical tools that solve everyday problems.
+<p class="tagline">
+I build practical apps that solve everyday problems.
 </p>
 
 <p>
 <a href="https://github.com/YOUR_GITHUB">GitHub</a> |
-<a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a>
+<a href="https://linkedin.com/in/YOUR_LINKEDIN">LinkedIn</a> |
+<a href="mailto:pad9012@gmail.com">Email</a>
 </p>
+
+</div>
+
+<div class="section">
+
+<h2>About</h2>
+
+<p>
+Hi, I'm Padma. I'm a computer science graduate from UC Riverside who enjoys building tools that make decisions easier using data and visualization.
+</p>
+
+<p>
+I'm especially interested in products where software engineering directly improves user experience and usability.
+</p>
+
+</div>
+
+<div class="section">
 
 <h2>Projects</h2>
 
 <div class="project">
+
 <h3>Yelp Area Explorer</h3>
 
 <p>
-I built this because when using Yelp it's difficult to quickly see which neighborhoods actually have a high concentration of good restaurants.
-Scrolling through long lists doesn't help you understand where the best areas are.
+Yelp is great for finding restaurants, but it doesn't make it easy to see which neighborhoods actually have a high concentration of good options.
 </p>
 
 <p>
-This Flutter app visualizes Yelp restaurant data directly on a map so users can instantly see areas with dense clusters of highly rated restaurants.
+I built Yelp Area Explorer to visualize restaurant density and ratings directly on a map so users can quickly see which areas are worth exploring.
 </p>
 
 <p class="stack">
-Flutter • Google Maps API • Yelp API
+<span class="badge">Flutter</span>
+<span class="badge">Google Maps API</span>
+<span class="badge">Yelp API</span>
 </p>
 
 <p>
@@ -87,11 +147,13 @@ Flutter • Google Maps API • Yelp API
 <h3>Smart Security System</h3>
 
 <p>
-Built a real-time security system using a Jetson Nano and YOLOv5 that detects unknown individuals in live camera feeds and sends alerts to a user interface.
+Built a real-time security system using a Jetson Nano and YOLOv5 that detects unknown individuals from live video feeds and sends alerts to a user interface.
 </p>
 
 <p class="stack">
-Jetson Nano • YOLOv5 • Computer Vision
+<span class="badge">Jetson Nano</span>
+<span class="badge">YOLOv5</span>
+<span class="badge">Computer Vision</span>
 </p>
 
 </div>
@@ -101,31 +163,62 @@ Jetson Nano • YOLOv5 • Computer Vision
 <h3>Perfect Scents</h3>
 
 <p>
-A VR-based concept exploring how immersive environments can transform fragrance discovery and emotional connection with products.
+A VR-based concept exploring how immersive environments can transform fragrance discovery and emotional connection with fragrances.
 </p>
 
 <p class="stack">
-Unity • VR • Product Design
+<span class="badge">Unity</span>
+<span class="badge">VR</span>
+<span class="badge">Product Design</span>
 </p>
 
 </div>
 
-<h2>About</h2>
+</div>
+
+<div class="section">
+
+<h2>Experience</h2>
 
 <p>
-I recently graduated with a degree in Computer Science from UC Riverside.
-I enjoy building products that combine software engineering with thoughtful product design.
+<strong>Medtronic — Software Engineering Intern</strong><br>
+Worked on Android features and performance improvements for a consumer health application.
 </p>
 
 <p>
-Right now I'm interested in tools that help people make better decisions using data and visualization.
+<strong>Dexcom — Software Engineering Intern</strong><br>
+Developed mobile features and experimented with voice assistant integrations for medical device workflows.
 </p>
+
+</div>
+
+<div class="section">
+
+<h2>Skills</h2>
+
+<p>
+<strong>Languages:</strong> Python, Java, C++<br>
+<strong>Mobile:</strong> Flutter, Kotlin<br>
+<strong>Cloud:</strong> AWS, Google Cloud<br>
+<strong>Other:</strong> Data analysis with Pandas
+</p>
+
+</div>
+
+<div class="section">
 
 <h2>Contact</h2>
 
 <p>
-Email: gbotros@seas.upenn.edu
+Email: <a href="mailto:pad9012@gmail.com">pad9012@gmail.com</a>
 </p>
 
+</div>
+
+<div class="footer">
+© 2026 Padma Bellamkonda
+</div>
+
 </body>
+
 </html>
